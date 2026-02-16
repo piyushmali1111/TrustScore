@@ -1,0 +1,821 @@
+review_id,seller_id,rating,review_text,review_date
+1,2,2,"Product is okay, delivery was slow.",2024-11-13
+2,19,4,Met my expectations.,2024-02-03
+3,16,5,Will definitely buy again.,2024-03-09
+4,15,3,Met my expectations.,2023-01-19
+5,7,5,Outstanding service and quality.,2023-12-05
+6,10,3,Met my expectations.,2023-02-10
+7,1,4,Acceptable service.,2024-01-15
+8,16,5,Excellent product and fast delivery.,2023-07-01
+9,8,4,"Product is okay, delivery was slow.",2023-05-30
+10,10,4,Nothing special but not bad.,2023-06-27
+11,13,1,Poor packaging and slow response.,2023-11-27
+12,7,4,Excellent product and fast delivery.,2024-05-04
+13,15,2,Acceptable service.,2024-07-11
+14,17,3,"Product is okay, delivery was slow.",2024-04-23
+15,20,3,"Fair product, average shipping.",2024-11-03
+16,9,4,Great experience overall.,2024-12-22
+17,18,5,Nice,2024-06-09
+18,14,5,BEST PRODUCT EVER!!! AMAZING!!!,2023-09-02
+19,2,3,Decent quality for the price.,2023-06-27
+20,9,5,Product exactly as described.,2023-12-04
+21,13,5,SUPER GREAT SELLER!!! BUY NOW!!!,2024-02-26
+22,19,4,Acceptable service.,2024-10-20
+23,6,5,Excellent! Highly recommended!,2024-05-20
+24,1,4,"Product is okay, delivery was slow.",2023-04-24
+25,2,3,Met my expectations.,2023-07-28
+26,17,4,"Fair product, average shipping.",2024-07-15
+27,8,4,Nothing special but not bad.,2023-02-25
+28,1,2,"Product is okay, delivery was slow.",2024-06-09
+29,20,4,Nothing special but not bad.,2024-03-10
+30,11,2,Acceptable service.,2024-10-13
+31,3,4,Decent quality for the price.,2023-09-30
+32,3,5,Best,2024-08-01
+33,20,3,Nothing special but not bad.,2023-08-02
+34,16,5,Great experience overall.,2024-10-11
+35,7,5,"Very good quality, satisfied.",2023-12-16
+36,10,3,Decent quality for the price.,2024-05-19
+37,19,4,Met my expectations.,2023-11-17
+38,4,5,Excellent product and fast delivery.,2024-07-25
+39,18,3,Met my expectations.,2024-09-16
+40,6,1,Slow customer service.,2023-11-26
+41,2,3,"Average experience, could be better.",2024-06-12
+42,13,3,Would not recommend.,2024-11-29
+43,19,2,"Average experience, could be better.",2024-03-04
+44,20,3,Nothing special but not bad.,2023-11-16
+45,10,3,"Average experience, could be better.",2023-11-29
+46,13,1,Not satisfied with the quality.,2024-09-14
+47,1,2,Nothing special but not bad.,2023-12-12
+48,8,2,Met my expectations.,2023-05-26
+49,20,4,Nothing special but not bad.,2024-05-20
+50,17,3,Met my expectations.,2023-04-27
+51,1,3,Met my expectations.,2024-04-27
+52,10,3,"Fair product, average shipping.",2024-09-30
+53,19,3,Acceptable service.,2024-09-10
+54,6,1,Not satisfied with the quality.,2024-12-23
+55,19,2,"Average experience, could be better.",2024-09-10
+56,18,2,"Fair product, average shipping.",2023-09-27
+57,17,2,"Average experience, could be better.",2023-10-15
+58,18,3,Met my expectations.,2024-09-19
+59,6,5,Perfect! Will buy again!,2023-05-23
+60,20,4,Decent quality for the price.,2024-04-02
+61,16,3,"Very good quality, satisfied.",2024-11-17
+62,9,4,"Very good quality, satisfied.",2024-02-11
+63,17,3,"Average experience, could be better.",2024-05-15
+64,13,1,Disappointing experience.,2023-02-28
+65,8,3,"Product is okay, delivery was slow.",2024-03-29
+66,15,3,Decent quality for the price.,2024-05-30
+67,18,2,"Product is okay, delivery was slow.",2023-05-10
+68,6,2,Poor packaging and slow response.,2023-06-12
+69,2,2,"Fair product, average shipping.",2023-11-12
+70,17,4,Nothing special but not bad.,2023-07-02
+71,18,4,Acceptable service.,2024-12-09
+72,4,4,Excellent product and fast delivery.,2023-02-05
+73,1,3,Decent quality for the price.,2024-10-12
+74,7,5,"Very good quality, satisfied.",2023-04-03
+75,19,4,"Average experience, could be better.",2024-11-11
+76,19,2,"Fair product, average shipping.",2023-11-24
+77,10,3,Acceptable service.,2024-06-03
+78,19,4,"Product is okay, delivery was slow.",2024-05-19
+79,18,4,Nothing special but not bad.,2023-07-30
+80,6,2,Slow customer service.,2024-06-29
+81,5,2,Nothing special but not bad.,2023-09-04
+82,6,2,Slow customer service.,2024-09-24
+83,16,3,Excellent product and fast delivery.,2024-09-11
+84,14,3,"Fair product, average shipping.",2023-06-05
+85,18,3,Decent quality for the price.,2024-06-02
+86,17,4,Nothing special but not bad.,2024-12-27
+87,15,3,Decent quality for the price.,2024-12-21
+88,11,3,"Fair product, average shipping.",2024-10-20
+89,6,5,Perfect! Will buy again!,2023-12-05
+90,12,4,Decent quality for the price.,2023-11-07
+91,14,3,"Product is okay, delivery was slow.",2024-03-13
+92,13,1,Not satisfied with the quality.,2024-10-18
+93,6,1,Delivery was very late.,2023-04-02
+94,13,1,Poor packaging and slow response.,2024-04-25
+95,15,3,Acceptable service.,2023-05-05
+96,13,5,SUPER GREAT SELLER!!! BUY NOW!!!,2024-12-08
+97,17,2,Met my expectations.,2023-10-15
+98,16,5,Outstanding service and quality.,2023-01-04
+99,13,1,Delivery was very late.,2023-06-05
+100,3,5,Perfect! Will buy again!,2024-04-11
+101,14,3,Decent quality for the price.,2023-06-03
+102,17,3,Nothing special but not bad.,2023-09-26
+103,6,1,Disappointing experience.,2024-07-31
+104,8,4,Decent quality for the price.,2023-11-25
+105,9,4,Highly recommend this seller.,2024-12-11
+106,19,2,Acceptable service.,2023-02-12
+107,16,4,Fast shipping and good packaging.,2023-01-29
+108,17,4,Nothing special but not bad.,2024-05-20
+109,15,3,Met my expectations.,2023-05-07
+110,16,5,"Very good quality, satisfied.",2024-12-11
+111,3,4,"Average experience, could be better.",2024-08-07
+112,14,4,Nothing special but not bad.,2024-05-30
+113,5,2,Decent quality for the price.,2024-09-14
+114,11,4,"Average experience, could be better.",2023-03-22
+115,6,5,BEST PRODUCT EVER!!! AMAZING!!!,2023-09-06
+116,6,5,Great seller! Fast shipping!,2024-07-16
+117,20,3,"Fair product, average shipping.",2023-03-13
+118,1,4,Acceptable service.,2023-03-10
+119,9,4,Outstanding service and quality.,2024-01-26
+120,3,2,Decent quality for the price.,2023-02-16
+121,5,3,Decent quality for the price.,2023-03-27
+122,8,4,Decent quality for the price.,2024-11-03
+123,14,4,Acceptable service.,2023-06-15
+124,4,4,Fast shipping and good packaging.,2023-01-24
+125,7,5,Great experience overall.,2024-11-14
+126,19,2,"Fair product, average shipping.",2024-06-11
+127,15,4,Acceptable service.,2023-12-02
+128,3,5,Amazing product! Best seller!,2023-09-18
+129,10,3,"Average experience, could be better.",2023-02-07
+130,8,3,Met my expectations.,2024-12-07
+131,20,3,"Fair product, average shipping.",2024-12-31
+132,6,2,Not satisfied with the quality.,2023-02-11
+133,20,3,Met my expectations.,2024-01-24
+134,4,4,Highly recommend this seller.,2023-01-23
+135,2,3,Decent quality for the price.,2023-11-03
+136,12,2,"Fair product, average shipping.",2023-11-02
+137,9,5,Great experience overall.,2024-04-30
+138,9,5,Great experience overall.,2023-05-25
+139,5,4,"Fair product, average shipping.",2023-01-05
+140,15,3,"Fair product, average shipping.",2024-06-02
+141,7,4,Outstanding service and quality.,2023-04-20
+142,13,1,Poor packaging and slow response.,2023-10-29
+143,4,5,Highly recommend this seller.,2023-06-28
+144,5,3,"Fair product, average shipping.",2024-06-13
+145,17,3,Acceptable service.,2023-08-14
+146,20,3,"Fair product, average shipping.",2023-09-15
+147,4,5,Great experience overall.,2024-12-24
+148,11,4,Decent quality for the price.,2023-07-31
+149,3,4,Nothing special but not bad.,2024-01-01
+150,17,2,Nothing special but not bad.,2023-08-11
+151,12,5,Best,2024-07-04
+152,18,5,Perfect,2024-04-21
+153,12,5,Perfect,2023-12-17
+154,11,3,Nothing special but not bad.,2023-10-18
+155,12,4,Acceptable service.,2023-07-09
+156,9,4,Highly recommend this seller.,2023-06-25
+157,5,2,"Fair product, average shipping.",2024-11-12
+158,2,3,"Product is okay, delivery was slow.",2024-02-10
+159,9,3,Outstanding service and quality.,2024-08-20
+160,8,3,Met my expectations.,2023-07-08
+161,16,4,Great experience overall.,2023-10-06
+162,20,3,Nothing special but not bad.,2023-09-22
+163,18,2,Met my expectations.,2024-07-11
+164,18,3,Acceptable service.,2024-06-22
+165,3,4,"Product is okay, delivery was slow.",2024-03-12
+166,8,3,Nothing special but not bad.,2023-10-11
+167,4,5,Excellent product and fast delivery.,2023-11-10
+168,14,3,"Product is okay, delivery was slow.",2024-01-15
+169,2,3,"Fair product, average shipping.",2024-11-09
+170,12,5,Great seller! Fast shipping!,2024-01-13
+171,8,3,Nothing special but not bad.,2024-03-04
+172,6,1,Would not recommend.,2023-10-18
+173,10,2,Met my expectations.,2023-03-20
+174,17,3,Acceptable service.,2023-07-05
+175,1,3,"Fair product, average shipping.",2024-01-08
+176,4,5,Fast shipping and good packaging.,2024-09-30
+177,12,2,Nothing special but not bad.,2024-12-17
+178,10,3,Nothing special but not bad.,2023-06-23
+179,17,4,Decent quality for the price.,2023-01-10
+180,13,1,Disappointing experience.,2024-02-23
+181,11,3,Met my expectations.,2023-07-13
+182,19,3,Decent quality for the price.,2024-04-22
+183,14,3,Met my expectations.,2024-01-14
+184,8,3,Decent quality for the price.,2023-04-05
+185,18,5,Good,2024-07-24
+186,3,5,Best,2023-03-24
+187,3,5,Great seller! Fast shipping!,2023-11-17
+188,11,3,"Average experience, could be better.",2023-03-08
+189,7,4,Outstanding service and quality.,2024-03-26
+190,17,4,Decent quality for the price.,2023-04-23
+191,12,5,SUPER GREAT SELLER!!! BUY NOW!!!,2023-04-06
+192,4,5,"Very good quality, satisfied.",2024-01-04
+193,1,3,Acceptable service.,2024-12-18
+194,9,5,Product exactly as described.,2023-09-12
+195,3,5,Perfect,2024-08-04
+196,20,2,Acceptable service.,2023-03-15
+197,5,3,Met my expectations.,2023-09-05
+198,5,3,Met my expectations.,2024-02-19
+199,19,4,"Fair product, average shipping.",2024-04-17
+200,20,2,"Product is okay, delivery was slow.",2024-04-24
+201,15,3,"Fair product, average shipping.",2024-05-19
+202,2,3,Met my expectations.,2024-09-03
+203,10,4,"Fair product, average shipping.",2024-05-18
+204,4,3,Highly recommend this seller.,2023-02-07
+205,14,2,Decent quality for the price.,2023-09-07
+206,10,3,"Average experience, could be better.",2024-06-03
+207,12,3,"Product is okay, delivery was slow.",2024-05-19
+208,1,3,"Average experience, could be better.",2024-08-10
+209,18,3,Acceptable service.,2023-01-07
+210,12,4,Met my expectations.,2023-08-18
+211,5,3,Decent quality for the price.,2024-09-20
+212,20,4,Decent quality for the price.,2024-05-10
+213,15,3,Nothing special but not bad.,2023-09-04
+214,8,3,Acceptable service.,2024-09-12
+215,16,5,Excellent product and fast delivery.,2024-05-09
+216,7,5,Will definitely buy again.,2023-07-12
+217,17,4,"Product is okay, delivery was slow.",2024-07-30
+218,8,3,Met my expectations.,2023-03-16
+219,1,3,"Average experience, could be better.",2023-12-04
+220,19,3,"Average experience, could be better.",2023-08-18
+221,1,2,Acceptable service.,2023-10-16
+222,3,3,Acceptable service.,2023-02-14
+223,1,2,Decent quality for the price.,2023-07-23
+224,16,5,Fast shipping and good packaging.,2024-10-22
+225,10,4,Met my expectations.,2024-01-08
+226,13,2,Disappointing experience.,2024-10-03
+227,6,1,Not satisfied with the quality.,2023-09-13
+228,5,3,"Product is okay, delivery was slow.",2024-04-16
+229,13,5,SUPER GREAT SELLER!!! BUY NOW!!!,2023-07-14
+230,5,3,"Fair product, average shipping.",2024-12-08
+231,20,2,Acceptable service.,2024-12-02
+232,20,4,"Average experience, could be better.",2024-01-07
+233,9,5,Will definitely buy again.,2024-08-08
+234,7,5,Excellent product and fast delivery.,2024-12-08
+235,8,3,Decent quality for the price.,2023-05-18
+236,20,4,"Average experience, could be better.",2024-02-01
+237,4,5,Highly recommend this seller.,2023-06-21
+238,6,3,Would not recommend.,2024-05-08
+239,7,4,Great experience overall.,2023-01-02
+240,14,5,SUPER GREAT SELLER!!! BUY NOW!!!,2024-03-29
+241,20,3,"Product is okay, delivery was slow.",2023-04-07
+242,4,5,Highly recommend this seller.,2024-01-05
+243,19,2,"Average experience, could be better.",2023-11-12
+244,6,5,Perfect,2024-01-28
+245,20,3,"Average experience, could be better.",2023-02-14
+246,8,3,Nothing special but not bad.,2023-03-14
+247,12,3,Met my expectations.,2024-01-29
+248,16,4,Outstanding service and quality.,2023-12-11
+249,8,4,"Average experience, could be better.",2023-09-20
+250,8,2,Decent quality for the price.,2023-05-12
+251,17,4,Met my expectations.,2024-03-23
+252,11,4,"Product is okay, delivery was slow.",2023-09-07
+253,18,3,"Average experience, could be better.",2023-10-29
+254,8,3,Met my expectations.,2023-07-03
+255,12,2,"Product is okay, delivery was slow.",2023-02-06
+256,6,1,Product quality below expectations.,2023-08-30
+257,13,5,Perfect,2024-11-28
+258,14,3,"Product is okay, delivery was slow.",2023-08-29
+259,9,4,Excellent product and fast delivery.,2024-01-27
+260,1,2,"Fair product, average shipping.",2024-10-23
+261,13,2,Would not recommend.,2024-05-11
+262,20,4,Decent quality for the price.,2024-06-27
+263,17,2,"Product is okay, delivery was slow.",2023-11-22
+264,7,5,Great experience overall.,2023-04-26
+265,18,4,"Product is okay, delivery was slow.",2024-08-03
+266,18,3,Acceptable service.,2024-10-19
+267,18,3,Nothing special but not bad.,2024-01-13
+268,18,5,SUPER GREAT SELLER!!! BUY NOW!!!,2024-11-15
+269,3,3,"Fair product, average shipping.",2024-10-07
+270,19,4,Decent quality for the price.,2024-06-22
+271,6,2,Delivery was very late.,2024-09-07
+272,11,2,"Product is okay, delivery was slow.",2023-08-01
+273,7,5,Highly recommend this seller.,2024-05-11
+274,15,3,"Average experience, could be better.",2023-07-26
+275,3,3,Met my expectations.,2024-07-24
+276,5,3,"Product is okay, delivery was slow.",2024-06-24
+277,9,5,Outstanding service and quality.,2024-08-17
+278,1,2,Acceptable service.,2024-10-11
+279,2,3,"Fair product, average shipping.",2023-05-02
+280,11,2,"Product is okay, delivery was slow.",2023-11-12
+281,11,2,"Average experience, could be better.",2024-05-29
+282,15,3,Met my expectations.,2024-04-29
+283,10,3,Acceptable service.,2023-04-08
+284,7,5,Outstanding service and quality.,2024-08-08
+285,2,4,"Average experience, could be better.",2024-12-10
+286,12,4,"Average experience, could be better.",2023-05-24
+287,18,3,"Average experience, could be better.",2023-08-09
+288,13,5,SUPER GREAT SELLER!!! BUY NOW!!!,2023-11-30
+289,18,3,Decent quality for the price.,2024-12-17
+290,4,4,Fast shipping and good packaging.,2024-02-26
+291,9,5,Outstanding service and quality.,2024-01-15
+292,9,5,Product exactly as described.,2023-01-11
+293,7,4,Highly recommend this seller.,2024-04-06
+294,19,3,Nothing special but not bad.,2023-08-16
+295,2,3,"Average experience, could be better.",2023-04-16
+296,18,3,Decent quality for the price.,2024-11-03
+297,9,5,Will definitely buy again.,2023-03-27
+298,19,4,"Average experience, could be better.",2024-08-15
+299,15,2,"Fair product, average shipping.",2024-06-06
+300,8,3,"Fair product, average shipping.",2024-05-17
+301,10,4,"Average experience, could be better.",2024-05-02
+302,20,3,Nothing special but not bad.,2024-01-22
+303,11,2,"Product is okay, delivery was slow.",2023-09-24
+304,2,4,"Average experience, could be better.",2023-05-05
+305,1,4,"Product is okay, delivery was slow.",2023-01-06
+306,20,2,"Product is okay, delivery was slow.",2024-05-03
+307,17,4,"Average experience, could be better.",2023-02-21
+308,2,2,"Product is okay, delivery was slow.",2024-08-15
+309,17,4,Met my expectations.,2023-04-25
+310,14,5,SUPER GREAT SELLER!!! BUY NOW!!!,2024-01-27
+311,11,3,"Product is okay, delivery was slow.",2024-05-04
+312,3,3,Met my expectations.,2024-11-23
+313,17,4,"Fair product, average shipping.",2024-08-21
+314,19,4,Decent quality for the price.,2024-03-15
+315,16,4,Outstanding service and quality.,2024-08-11
+316,17,4,"Average experience, could be better.",2023-09-02
+317,18,3,Nothing special but not bad.,2024-03-15
+318,6,1,Poor packaging and slow response.,2024-06-18
+319,12,5,Great seller! Fast shipping!,2024-01-31
+320,14,3,"Product is okay, delivery was slow.",2023-07-06
+321,12,2,"Average experience, could be better.",2024-09-30
+322,9,5,Excellent product and fast delivery.,2023-09-01
+323,3,5,Good,2024-05-21
+324,5,3,"Fair product, average shipping.",2023-10-16
+325,7,5,Great experience overall.,2023-06-27
+326,13,1,Not satisfied with the quality.,2024-03-10
+327,14,3,"Average experience, could be better.",2024-04-24
+328,12,3,"Product is okay, delivery was slow.",2024-06-23
+329,14,2,"Average experience, could be better.",2023-09-29
+330,10,3,Decent quality for the price.,2023-09-07
+331,7,3,Excellent product and fast delivery.,2023-12-17
+332,7,4,Great experience overall.,2023-06-19
+333,6,5,Amazing product! Best seller!,2024-11-07
+334,8,4,"Average experience, could be better.",2024-12-12
+335,18,5,Great seller! Fast shipping!,2023-05-31
+336,15,3,Decent quality for the price.,2024-08-13
+337,16,5,Outstanding service and quality.,2023-06-22
+338,8,3,Acceptable service.,2023-07-17
+339,4,5,Excellent product and fast delivery.,2024-04-04
+340,4,3,Will definitely buy again.,2023-08-28
+341,10,3,"Average experience, could be better.",2023-12-31
+342,8,2,Met my expectations.,2023-12-17
+343,8,3,Acceptable service.,2023-12-29
+344,11,2,Met my expectations.,2024-11-16
+345,11,2,"Average experience, could be better.",2024-12-11
+346,19,2,"Product is okay, delivery was slow.",2024-09-17
+347,8,4,"Product is okay, delivery was slow.",2024-02-12
+348,19,3,Nothing special but not bad.,2023-06-17
+349,2,3,Decent quality for the price.,2024-05-18
+350,15,3,"Product is okay, delivery was slow.",2023-06-01
+351,8,3,"Average experience, could be better.",2024-05-14
+352,18,3,"Average experience, could be better.",2024-12-19
+353,8,3,"Fair product, average shipping.",2023-02-11
+354,4,5,Will definitely buy again.,2023-04-10
+355,5,3,Acceptable service.,2023-12-06
+356,14,2,Acceptable service.,2023-12-01
+357,6,5,SUPER GREAT SELLER!!! BUY NOW!!!,2023-08-05
+358,16,4,Great experience overall.,2023-10-30
+359,10,3,"Product is okay, delivery was slow.",2024-11-26
+360,12,3,"Fair product, average shipping.",2024-02-27
+361,13,2,Slow customer service.,2024-12-10
+362,10,3,"Fair product, average shipping.",2024-03-20
+363,13,2,Would not recommend.,2023-10-04
+364,9,5,"Very good quality, satisfied.",2024-12-13
+365,3,4,Acceptable service.,2023-11-12
+366,7,5,Fast shipping and good packaging.,2024-01-30
+367,7,5,Excellent product and fast delivery.,2023-10-05
+368,4,5,Great experience overall.,2023-06-05
+369,2,2,Met my expectations.,2023-01-11
+370,6,2,Not satisfied with the quality.,2024-12-06
+371,9,5,"Very good quality, satisfied.",2023-03-03
+372,15,3,Nothing special but not bad.,2024-12-11
+373,12,3,"Fair product, average shipping.",2024-10-03
+374,2,2,"Fair product, average shipping.",2024-03-02
+375,11,2,"Product is okay, delivery was slow.",2024-11-09
+376,8,4,Decent quality for the price.,2023-07-17
+377,11,4,Met my expectations.,2023-03-08
+378,15,3,"Product is okay, delivery was slow.",2023-04-15
+379,10,3,"Fair product, average shipping.",2023-04-16
+380,17,3,"Average experience, could be better.",2024-12-31
+381,16,5,Highly recommend this seller.,2023-01-02
+382,1,2,Acceptable service.,2023-01-15
+383,16,4,"Very good quality, satisfied.",2024-01-19
+384,11,3,Decent quality for the price.,2023-09-05
+385,9,5,Product exactly as described.,2024-06-11
+386,11,3,"Product is okay, delivery was slow.",2024-08-15
+387,14,4,Met my expectations.,2023-02-27
+388,10,2,Decent quality for the price.,2023-01-15
+389,17,4,Nothing special but not bad.,2024-08-15
+390,6,2,Delivery was very late.,2023-03-02
+391,7,5,Highly recommend this seller.,2024-06-07
+392,5,3,"Fair product, average shipping.",2024-03-20
+393,16,5,Product exactly as described.,2024-06-26
+394,15,3,"Average experience, could be better.",2023-02-24
+395,13,1,Product quality below expectations.,2023-05-01
+396,16,4,Will definitely buy again.,2023-08-03
+397,15,3,"Product is okay, delivery was slow.",2023-02-26
+398,12,2,Acceptable service.,2023-11-07
+399,3,2,Acceptable service.,2023-10-14
+400,9,4,Highly recommend this seller.,2024-07-19
+401,11,3,"Product is okay, delivery was slow.",2024-04-23
+402,4,5,"Very good quality, satisfied.",2024-03-13
+403,14,4,"Average experience, could be better.",2024-09-16
+404,3,3,Met my expectations.,2023-05-09
+405,1,3,Nothing special but not bad.,2024-01-26
+406,19,3,"Fair product, average shipping.",2023-12-04
+407,6,5,Excellent! Highly recommended!,2024-11-25
+408,14,5,Best,2024-12-01
+409,7,3,Excellent product and fast delivery.,2023-09-25
+410,10,3,"Average experience, could be better.",2024-11-18
+411,15,4,"Average experience, could be better.",2024-04-23
+412,19,2,"Product is okay, delivery was slow.",2023-08-04
+413,10,3,Acceptable service.,2024-02-09
+414,17,3,Met my expectations.,2024-08-27
+415,11,4,Nothing special but not bad.,2024-03-30
+416,5,3,"Fair product, average shipping.",2024-06-22
+417,15,3,"Fair product, average shipping.",2024-05-18
+418,4,5,Outstanding service and quality.,2023-01-27
+419,19,2,Acceptable service.,2023-02-06
+420,12,2,Nothing special but not bad.,2024-02-28
+421,15,2,"Fair product, average shipping.",2024-01-07
+422,4,4,"Very good quality, satisfied.",2023-04-07
+423,8,4,Nothing special but not bad.,2024-02-14
+424,7,4,Fast shipping and good packaging.,2024-01-19
+425,15,4,"Average experience, could be better.",2024-07-14
+426,8,4,"Product is okay, delivery was slow.",2023-10-20
+427,10,4,Decent quality for the price.,2023-09-21
+428,3,2,Acceptable service.,2023-09-08
+429,14,3,Acceptable service.,2023-02-22
+430,10,3,"Product is okay, delivery was slow.",2023-04-27
+431,8,3,"Product is okay, delivery was slow.",2023-05-23
+432,17,3,"Fair product, average shipping.",2024-05-11
+433,17,3,"Fair product, average shipping.",2023-03-24
+434,14,2,Nothing special but not bad.,2023-04-21
+435,18,5,Perfect,2024-03-30
+436,9,4,Fast shipping and good packaging.,2024-09-29
+437,18,3,Acceptable service.,2024-08-17
+438,18,5,Excellent! Highly recommended!,2024-06-22
+439,4,4,"Very good quality, satisfied.",2023-07-21
+440,4,4,"Very good quality, satisfied.",2023-09-22
+441,8,3,Met my expectations.,2024-09-26
+442,15,3,Acceptable service.,2023-12-12
+443,15,3,"Average experience, could be better.",2024-09-25
+444,4,5,Excellent product and fast delivery.,2024-12-28
+445,17,4,Nothing special but not bad.,2023-03-10
+446,6,1,Disappointing experience.,2024-02-20
+447,20,4,"Average experience, could be better.",2024-08-04
+448,19,4,"Product is okay, delivery was slow.",2023-07-19
+449,16,4,Outstanding service and quality.,2023-05-14
+450,19,2,Acceptable service.,2024-07-12
+451,13,5,Amazing product! Best seller!,2023-11-12
+452,12,3,Acceptable service.,2023-10-08
+453,20,4,"Fair product, average shipping.",2024-03-02
+454,13,3,Delivery was very late.,2024-07-19
+455,8,4,Acceptable service.,2023-03-06
+456,6,1,Poor packaging and slow response.,2024-05-13
+457,13,3,Poor packaging and slow response.,2024-06-11
+458,18,4,"Product is okay, delivery was slow.",2023-01-28
+459,5,4,"Average experience, could be better.",2024-01-29
+460,15,3,Nothing special but not bad.,2024-04-27
+461,15,2,"Fair product, average shipping.",2023-12-07
+462,8,2,Acceptable service.,2024-07-01
+463,13,2,Poor packaging and slow response.,2023-12-31
+464,12,4,"Average experience, could be better.",2024-11-21
+465,5,2,Acceptable service.,2024-07-10
+466,13,2,Delivery was very late.,2023-06-23
+467,16,5,Outstanding service and quality.,2024-04-30
+468,20,3,Nothing special but not bad.,2023-04-16
+469,19,3,Met my expectations.,2024-10-16
+470,14,2,Nothing special but not bad.,2024-03-10
+471,10,3,Decent quality for the price.,2024-05-15
+472,12,3,Nothing special but not bad.,2024-09-22
+473,1,3,"Product is okay, delivery was slow.",2024-10-05
+474,6,1,Not satisfied with the quality.,2024-04-04
+475,12,2,"Average experience, could be better.",2024-09-23
+476,4,5,Highly recommend this seller.,2024-02-01
+477,2,3,"Fair product, average shipping.",2023-05-19
+478,8,2,Acceptable service.,2023-01-07
+479,20,2,"Average experience, could be better.",2024-01-22
+480,11,4,Nothing special but not bad.,2024-04-28
+481,2,2,Met my expectations.,2023-09-21
+482,19,4,Nothing special but not bad.,2023-03-12
+483,10,4,Decent quality for the price.,2024-03-19
+484,3,5,BEST PRODUCT EVER!!! AMAZING!!!,2023-09-16
+485,8,2,"Fair product, average shipping.",2024-08-31
+486,16,4,Excellent product and fast delivery.,2024-08-25
+487,20,3,"Average experience, could be better.",2024-12-04
+488,20,4,Acceptable service.,2024-07-07
+489,15,3,Met my expectations.,2023-10-11
+490,9,5,Outstanding service and quality.,2023-05-02
+491,16,5,Highly recommend this seller.,2023-08-10
+492,3,5,Best,2024-09-28
+493,16,5,Great experience overall.,2023-08-29
+494,8,4,"Product is okay, delivery was slow.",2023-04-18
+495,5,3,Nothing special but not bad.,2024-11-29
+496,7,5,Fast shipping and good packaging.,2024-08-30
+497,15,2,Nothing special but not bad.,2023-08-05
+498,3,4,Decent quality for the price.,2024-12-20
+499,9,4,Highly recommend this seller.,2024-03-09
+500,12,5,SUPER GREAT SELLER!!! BUY NOW!!!,2023-06-07
+501,1,2,Nothing special but not bad.,2023-07-21
+502,13,1,Not satisfied with the quality.,2023-12-30
+503,2,3,"Average experience, could be better.",2023-09-29
+504,15,2,Met my expectations.,2023-10-09
+505,5,3,Nothing special but not bad.,2023-02-20
+506,13,5,Perfect,2023-06-06
+507,5,2,"Fair product, average shipping.",2024-01-14
+508,13,1,Poor packaging and slow response.,2023-06-02
+509,15,3,"Product is okay, delivery was slow.",2023-11-13
+510,3,3,"Product is okay, delivery was slow.",2024-06-04
+511,5,4,Nothing special but not bad.,2023-07-10
+512,1,3,Acceptable service.,2024-01-06
+513,19,3,Nothing special but not bad.,2023-08-09
+514,9,5,Excellent product and fast delivery.,2024-05-19
+515,11,3,Met my expectations.,2024-08-05
+516,7,5,Great experience overall.,2024-09-04
+517,20,2,Nothing special but not bad.,2023-07-17
+518,20,4,Nothing special but not bad.,2023-02-08
+519,2,2,Acceptable service.,2024-10-24
+520,16,4,Great experience overall.,2024-05-06
+521,15,2,Acceptable service.,2024-04-19
+522,13,1,Poor packaging and slow response.,2024-03-12
+523,4,5,Will definitely buy again.,2024-03-31
+524,20,4,"Product is okay, delivery was slow.",2023-04-15
+525,8,2,Acceptable service.,2024-10-11
+526,18,2,"Fair product, average shipping.",2023-06-04
+527,16,5,"Very good quality, satisfied.",2024-09-23
+528,13,1,Delivery was very late.,2024-01-10
+529,12,3,"Fair product, average shipping.",2024-04-05
+530,10,3,Met my expectations.,2023-05-03
+531,19,4,"Product is okay, delivery was slow.",2023-07-04
+532,7,5,Excellent product and fast delivery.,2023-06-27
+533,13,3,Poor packaging and slow response.,2024-11-26
+534,19,3,"Fair product, average shipping.",2023-05-29
+535,19,3,"Product is okay, delivery was slow.",2023-09-26
+536,14,3,Nothing special but not bad.,2023-02-22
+537,20,3,Nothing special but not bad.,2023-02-19
+538,2,3,Met my expectations.,2024-02-17
+539,6,1,Would not recommend.,2024-09-05
+540,9,5,Product exactly as described.,2023-11-06
+541,3,3,"Fair product, average shipping.",2024-02-21
+542,10,3,Met my expectations.,2023-05-24
+543,18,3,Met my expectations.,2023-12-19
+544,2,2,Nothing special but not bad.,2023-03-12
+545,2,3,Nothing special but not bad.,2023-07-16
+546,1,3,Decent quality for the price.,2024-02-05
+547,8,3,"Product is okay, delivery was slow.",2024-02-07
+548,2,4,"Product is okay, delivery was slow.",2023-07-25
+549,6,1,Not satisfied with the quality.,2023-12-02
+550,11,3,Decent quality for the price.,2023-08-15
+551,3,2,"Product is okay, delivery was slow.",2023-12-01
+552,14,4,"Fair product, average shipping.",2023-01-10
+553,5,2,"Fair product, average shipping.",2023-04-29
+554,10,3,Met my expectations.,2023-03-16
+555,1,3,Acceptable service.,2024-01-05
+556,8,4,Acceptable service.,2023-12-12
+557,2,4,"Product is okay, delivery was slow.",2024-04-03
+558,19,2,Acceptable service.,2024-07-24
+559,3,5,Perfect! Will buy again!,2024-11-24
+560,19,3,"Average experience, could be better.",2024-10-31
+561,1,4,Nothing special but not bad.,2023-04-27
+562,13,5,Perfect,2023-10-25
+563,18,3,"Average experience, could be better.",2023-06-11
+564,17,3,Nothing special but not bad.,2024-04-17
+565,6,1,Slow customer service.,2024-11-01
+566,19,3,"Product is okay, delivery was slow.",2023-02-18
+567,20,3,Nothing special but not bad.,2024-12-24
+568,5,4,Acceptable service.,2024-08-07
+569,14,3,"Product is okay, delivery was slow.",2024-02-02
+570,4,5,"Very good quality, satisfied.",2024-02-18
+571,18,2,"Fair product, average shipping.",2023-01-25
+572,12,5,BEST PRODUCT EVER!!! AMAZING!!!,2024-03-07
+573,14,3,Acceptable service.,2024-11-18
+574,4,3,Excellent product and fast delivery.,2023-05-30
+575,8,3,Acceptable service.,2023-05-02
+576,13,3,Delivery was very late.,2024-08-05
+577,10,3,Acceptable service.,2023-07-31
+578,9,5,Fast shipping and good packaging.,2024-12-25
+579,16,4,Product exactly as described.,2023-03-31
+580,13,3,Slow customer service.,2023-01-30
+581,14,2,Acceptable service.,2023-11-23
+582,9,5,Will definitely buy again.,2024-02-18
+583,6,2,Disappointing experience.,2024-09-27
+584,6,3,Product quality below expectations.,2023-07-12
+585,9,5,Outstanding service and quality.,2024-06-06
+586,10,3,Met my expectations.,2024-03-24
+587,6,3,Would not recommend.,2024-01-13
+588,6,5,Best,2023-11-18
+589,8,3,Nothing special but not bad.,2023-06-18
+590,6,1,Product quality below expectations.,2024-05-01
+591,20,3,"Fair product, average shipping.",2023-04-12
+592,5,3,Nothing special but not bad.,2023-09-21
+593,16,4,"Very good quality, satisfied.",2023-08-04
+594,2,3,"Average experience, could be better.",2023-09-18
+595,6,3,Delivery was very late.,2023-11-03
+596,13,1,Delivery was very late.,2024-10-06
+597,18,3,Acceptable service.,2023-11-13
+598,8,3,Acceptable service.,2024-07-12
+599,1,4,"Product is okay, delivery was slow.",2024-05-29
+600,1,3,Decent quality for the price.,2024-12-24
+601,13,5,Excellent! Highly recommended!,2024-09-08
+602,17,3,"Fair product, average shipping.",2023-10-16
+603,2,4,Decent quality for the price.,2023-03-06
+604,14,2,Met my expectations.,2024-12-22
+605,10,2,Decent quality for the price.,2023-07-09
+606,12,2,"Fair product, average shipping.",2023-02-13
+607,1,4,"Fair product, average shipping.",2023-09-26
+608,6,2,Disappointing experience.,2023-11-03
+609,4,4,Highly recommend this seller.,2024-06-06
+610,15,3,Nothing special but not bad.,2024-02-05
+611,19,3,Met my expectations.,2024-05-02
+612,12,4,Met my expectations.,2024-03-02
+613,8,3,"Average experience, could be better.",2023-12-11
+614,5,3,Met my expectations.,2023-07-05
+615,1,4,Met my expectations.,2024-07-11
+616,4,4,Will definitely buy again.,2023-02-22
+617,12,2,"Fair product, average shipping.",2023-10-01
+618,11,3,Decent quality for the price.,2023-03-01
+619,20,2,"Fair product, average shipping.",2023-08-21
+620,2,3,"Product is okay, delivery was slow.",2024-01-25
+621,16,5,Great experience overall.,2023-12-01
+622,19,3,"Product is okay, delivery was slow.",2024-02-25
+623,12,4,"Product is okay, delivery was slow.",2023-09-18
+624,11,2,"Product is okay, delivery was slow.",2023-11-20
+625,14,5,Perfect! Will buy again!,2023-08-25
+626,5,4,"Average experience, could be better.",2023-07-31
+627,17,4,Met my expectations.,2024-06-23
+628,16,4,Product exactly as described.,2023-06-08
+629,17,2,Met my expectations.,2024-01-13
+630,10,3,Met my expectations.,2024-03-21
+631,10,2,Acceptable service.,2024-02-07
+632,20,3,Met my expectations.,2023-09-18
+633,2,3,Decent quality for the price.,2023-01-26
+634,17,3,Acceptable service.,2023-07-12
+635,20,3,Decent quality for the price.,2024-06-30
+636,8,3,"Product is okay, delivery was slow.",2024-04-28
+637,8,3,"Fair product, average shipping.",2024-01-04
+638,1,2,"Average experience, could be better.",2024-05-13
+639,11,4,Acceptable service.,2023-10-21
+640,15,4,Decent quality for the price.,2024-05-16
+641,4,5,Excellent product and fast delivery.,2024-02-18
+642,18,4,Met my expectations.,2023-05-01
+643,13,2,Not satisfied with the quality.,2023-03-16
+644,4,4,Excellent product and fast delivery.,2023-02-28
+645,9,5,Fast shipping and good packaging.,2024-06-13
+646,6,5,Perfect,2023-11-12
+647,19,4,Met my expectations.,2024-05-16
+648,1,4,Met my expectations.,2024-09-29
+649,19,4,Decent quality for the price.,2024-10-13
+650,13,3,Delivery was very late.,2024-08-26
+651,13,1,Slow customer service.,2024-02-22
+652,12,2,Acceptable service.,2024-02-09
+653,3,4,"Fair product, average shipping.",2023-05-10
+654,14,5,Excellent! Highly recommended!,2024-02-07
+655,10,2,Met my expectations.,2024-04-15
+656,17,2,"Average experience, could be better.",2023-09-20
+657,16,5,"Very good quality, satisfied.",2023-11-18
+658,13,3,Slow customer service.,2024-08-23
+659,15,4,Nothing special but not bad.,2023-06-11
+660,13,1,Product quality below expectations.,2023-09-10
+661,3,3,"Product is okay, delivery was slow.",2023-06-02
+662,8,2,Decent quality for the price.,2023-11-22
+663,4,3,Great experience overall.,2024-03-08
+664,9,5,Outstanding service and quality.,2024-11-16
+665,5,4,Decent quality for the price.,2023-10-27
+666,5,3,Met my expectations.,2024-12-24
+667,20,2,"Product is okay, delivery was slow.",2023-11-03
+668,5,3,Decent quality for the price.,2023-10-16
+669,2,3,"Product is okay, delivery was slow.",2024-07-10
+670,8,3,Nothing special but not bad.,2024-03-16
+671,9,5,Product exactly as described.,2024-06-23
+672,10,3,Met my expectations.,2024-12-24
+673,19,4,Met my expectations.,2024-06-08
+674,15,3,"Fair product, average shipping.",2024-05-04
+675,19,3,Met my expectations.,2023-01-05
+676,2,2,Acceptable service.,2024-06-06
+677,6,5,Amazing product! Best seller!,2024-01-14
+678,10,3,Decent quality for the price.,2023-08-13
+679,14,5,Perfect,2024-03-06
+680,19,2,Nothing special but not bad.,2023-12-08
+681,19,2,Acceptable service.,2024-01-21
+682,16,3,Highly recommend this seller.,2024-11-16
+683,5,3,"Product is okay, delivery was slow.",2023-12-29
+684,2,3,Acceptable service.,2024-07-31
+685,18,3,Nothing special but not bad.,2024-12-19
+686,2,4,"Product is okay, delivery was slow.",2023-09-07
+687,5,3,"Fair product, average shipping.",2023-10-23
+688,8,3,"Fair product, average shipping.",2023-12-28
+689,5,4,"Product is okay, delivery was slow.",2024-12-16
+690,17,3,"Fair product, average shipping.",2023-05-15
+691,14,2,"Fair product, average shipping.",2024-10-30
+692,17,3,"Average experience, could be better.",2023-04-08
+693,20,4,Acceptable service.,2023-08-23
+694,15,3,"Average experience, could be better.",2023-06-16
+695,16,4,"Very good quality, satisfied.",2023-01-03
+696,2,3,"Fair product, average shipping.",2023-06-06
+697,11,4,"Average experience, could be better.",2023-08-07
+698,10,4,"Average experience, could be better.",2023-06-18
+699,8,3,Acceptable service.,2023-04-08
+700,18,5,Best,2024-01-17
+701,15,3,"Product is okay, delivery was slow.",2024-11-26
+702,2,2,"Fair product, average shipping.",2023-02-26
+703,13,5,Nice,2024-01-16
+704,20,4,Met my expectations.,2024-12-28
+705,2,3,Acceptable service.,2023-05-30
+706,10,4,Nothing special but not bad.,2024-02-11
+707,6,2,Product quality below expectations.,2024-09-14
+708,19,4,Nothing special but not bad.,2023-01-01
+709,11,3,Acceptable service.,2023-09-19
+710,6,5,Best,2023-05-02
+711,3,5,Best,2023-03-18
+712,12,5,Amazing product! Best seller!,2023-11-26
+713,14,2,"Average experience, could be better.",2024-01-11
+714,9,5,"Very good quality, satisfied.",2024-04-21
+715,11,2,Met my expectations.,2023-02-11
+716,12,5,Best,2024-12-05
+717,10,4,"Fair product, average shipping.",2023-02-17
+718,19,4,Acceptable service.,2024-10-12
+719,3,3,Met my expectations.,2024-05-17
+720,19,3,"Average experience, could be better.",2023-04-14
+721,4,4,Will definitely buy again.,2024-11-01
+722,3,5,Nice,2024-02-09
+723,9,4,Fast shipping and good packaging.,2024-10-02
+724,15,4,Decent quality for the price.,2023-10-16
+725,9,5,Highly recommend this seller.,2023-12-04
+726,5,3,Decent quality for the price.,2024-06-22
+727,1,3,Met my expectations.,2024-04-27
+728,5,3,"Average experience, could be better.",2024-06-04
+729,9,5,Excellent product and fast delivery.,2024-08-06
+730,12,5,Perfect,2023-12-30
+731,6,5,SUPER GREAT SELLER!!! BUY NOW!!!,2023-08-25
+732,9,5,Fast shipping and good packaging.,2024-10-16
+733,17,3,Acceptable service.,2024-01-03
+734,7,4,Excellent product and fast delivery.,2023-02-20
+735,11,2,"Average experience, could be better.",2024-06-06
+736,4,5,"Very good quality, satisfied.",2023-03-02
+737,13,1,Would not recommend.,2023-06-22
+738,7,3,Fast shipping and good packaging.,2024-12-04
+739,6,2,Disappointing experience.,2024-05-28
+740,14,3,Met my expectations.,2023-10-19
+741,15,4,"Fair product, average shipping.",2023-07-30
+742,19,3,"Fair product, average shipping.",2023-11-22
+743,14,3,"Average experience, could be better.",2023-09-23
+744,19,3,Acceptable service.,2023-07-10
+745,3,3,Decent quality for the price.,2024-12-28
+746,11,3,Met my expectations.,2023-01-25
+747,1,3,"Average experience, could be better.",2023-06-20
+748,14,2,"Average experience, could be better.",2023-06-22
+749,5,3,"Fair product, average shipping.",2023-09-25
+750,11,4,Met my expectations.,2023-08-08
+751,2,4,"Product is okay, delivery was slow.",2023-04-22
+752,2,2,Acceptable service.,2023-03-06
+753,16,5,Outstanding service and quality.,2024-09-03
+754,10,4,Decent quality for the price.,2023-06-27
+755,17,2,"Average experience, could be better.",2023-05-28
+756,5,2,"Average experience, could be better.",2024-04-23
+757,17,3,"Fair product, average shipping.",2023-08-06
+758,11,4,"Average experience, could be better.",2024-05-10
+759,9,5,Outstanding service and quality.,2023-09-13
+760,4,5,Outstanding service and quality.,2023-12-11
+761,2,4,Decent quality for the price.,2024-12-05
+762,6,3,Would not recommend.,2023-11-21
+763,18,4,Decent quality for the price.,2024-06-20
+764,19,3,Acceptable service.,2024-03-31
+765,16,4,Excellent product and fast delivery.,2023-03-26
+766,16,5,Will definitely buy again.,2023-01-16
+767,2,3,Met my expectations.,2024-08-13
+768,10,3,Decent quality for the price.,2023-03-12
+769,12,3,Decent quality for the price.,2023-07-29
+770,1,3,"Average experience, could be better.",2024-11-05
+771,15,3,"Fair product, average shipping.",2023-01-08
+772,16,5,Great experience overall.,2023-02-07
+773,13,1,Disappointing experience.,2024-07-09
+774,12,4,Nothing special but not bad.,2023-11-17
+775,16,5,"Very good quality, satisfied.",2024-07-14
+776,3,2,"Fair product, average shipping.",2023-09-03
+777,3,3,"Average experience, could be better.",2023-01-12
+778,14,3,Acceptable service.,2024-02-09
+779,14,4,"Fair product, average shipping.",2024-08-06
+780,19,2,Met my expectations.,2023-04-20
+781,16,3,Great experience overall.,2024-06-30
+782,14,4,Decent quality for the price.,2023-06-25
+783,4,5,Product exactly as described.,2023-09-20
+784,9,5,Will definitely buy again.,2023-12-04
+785,4,4,Will definitely buy again.,2023-06-23
+786,7,4,Excellent product and fast delivery.,2023-11-11
+787,14,5,Best,2024-08-20
+788,16,4,Will definitely buy again.,2023-07-26
+789,9,3,Excellent product and fast delivery.,2024-01-26
+790,1,3,"Average experience, could be better.",2023-06-28
+791,16,5,"Very good quality, satisfied.",2024-03-07
+792,16,5,Product exactly as described.,2023-11-26
+793,14,5,Great seller! Fast shipping!,2024-04-29
+794,4,5,Product exactly as described.,2023-09-12
+795,1,2,"Product is okay, delivery was slow.",2024-04-25
+796,6,1,Poor packaging and slow response.,2024-03-03
+797,3,3,Acceptable service.,2023-09-30
+798,18,3,Nothing special but not bad.,2023-05-21
+799,17,4,Nothing special but not bad.,2024-03-26
+800,4,4,Outstanding service and quality.,2023-01-04
+801,3,5,Great seller! Fast shipping!,2023-05-30
+802,3,5,Great seller! Fast shipping!,2023-05-30
+803,3,5,Great seller! Fast shipping!,2023-05-30
+804,3,5,Great seller! Fast shipping!,2023-05-30
+805,3,5,Great seller! Fast shipping!,2023-05-30
+806,3,5,Great seller! Fast shipping!,2023-05-30
+807,3,5,Great seller! Fast shipping!,2023-05-30
+808,6,5,Amazing product! Best seller!,2024-08-22
+809,6,5,Amazing product! Best seller!,2024-08-22
+810,6,5,Amazing product! Best seller!,2024-08-22
+811,6,5,Amazing product! Best seller!,2024-08-22
+812,6,5,Amazing product! Best seller!,2024-08-22
+813,6,5,Amazing product! Best seller!,2024-08-22
+814,6,5,Amazing product! Best seller!,2024-08-22
+815,6,5,Amazing product! Best seller!,2024-08-22
+816,12,5,Great seller! Fast shipping!,2023-02-26
+817,12,5,Great seller! Fast shipping!,2023-02-26
+818,12,5,Great seller! Fast shipping!,2023-02-26
+819,12,5,Great seller! Fast shipping!,2023-02-26
+820,12,5,Great seller! Fast shipping!,2023-02-26

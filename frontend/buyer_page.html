@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Verification - TrustScore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="buyer-page">
+    <div class="buyer-container">
+        <div class="verification-card">
+            <div class="verification-header">
+                <i class="fas fa-shield-check text-green logo-big"></i>
+                <h1>Trust Verification</h1>
+                <p>Verified by TrustScore Digital Assurance</p>
+            </div>
+
+            <div class="seller-identity">
+                <h2 id="sellerName">Loading Seller...</h2>
+                <div class="trust-badge" id="riskBadge">---</div>
+            </div>
+
+            <div class="score-circle-container">
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg"
+                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <path class="circle" id="scoreStroke" stroke-dasharray="0, 100"
+                        d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <text x="18" y="20.35" class="percentage" id="scoreText">0</text>
+                </svg>
+                <p class="score-label">Global Trust Score</p>
+            </div>
+
+            <div class="metrics-summary">
+                <div class="m-item">
+                    <span>Delivery</span>
+                    <div class="progress-bg">
+                        <div class="progress-bar" id="deliveryBar" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="m-item">
+                    <span>Authenticity</span>
+                    <div class="progress-bg">
+                        <div class="progress-bar" id="authBar" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="m-item">
+                    <span>Consistency</span>
+                    <div class="progress-bg">
+                        <div class="progress-bar" id="consistBar" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="verification-footer">
+                <p>This score is calculated based on historical order data, return rates, and verified customer
+                    feedback.</p>
+                <button class="btn btn-sm btn-outline" onclick="window.history.back()">Back to Product</button>
+            </div>
+        </div>
+
+        <div class="product-preview-card">
+            <p class="label">Example E-commerce Integration:</p>
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=100&q=80"
+                    alt="Shoes">
+                <div class="p-info">
+                    <h4>Premium Sport Shoes</h4>
+                    <p class="price">$129.99</p>
+                    <div class="trust-indicator small">
+                        <i class="fas fa-shield-check"></i> Verified TrustScore: <span id="smallScore">0.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const sellerId = urlParams.get('id') || '1'; // Default for demo
+
+            try {
+                const res = await fetch(`/api/buyer/${sellerId}`);
+                const data = await res.json();
+
+                if (res.ok) {
+                    document.getElementById('sellerName').innerText = data.seller_name;
+                    document.getElementById('scoreText').textContent = Math.round(data.trust_score);
+                    document.getElementById('smallScore').textContent = data.trust_score;
+
+                    const riskBadge = document.getElementById('riskBadge');
+                    riskBadge.textContent = data.risk_level + ' Risk';
+                    riskBadge.className = 'trust-badge risk-' + data.risk_level.toLowerCase();
+
+                    const scoreStroke = document.getElementById('scoreStroke');
+                    scoreStroke.setAttribute('stroke-dasharray', `${data.trust_score}, 100`);
+                    if (data.risk_level === 'Low') scoreStroke.style.stroke = '#22c55e';
+                    else if (data.risk_level === 'Medium') scoreStroke.style.stroke = '#f59e0b';
+                    else scoreStroke.style.stroke = '#ef4444';
+
+                    document.getElementById('deliveryBar').style.width = data.metrics.delivery + '%';
+                    document.getElementById('authBar').style.width = data.metrics.authenticity + '%';
+                    document.getElementById('consistBar').style.width = data.metrics.consistency + '%';
+                }
+            } catch (err) {
+                console.error(err);
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - TrustScore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="dashboard-page light-mode">
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <i class="fas fa-shield-halved"></i>
+            <span>TrustScore</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="seller_dashboard.html"><i class="fas fa-chart-line"></i> My Dashboard</a>
+            <a href="seller_reviews.html" class="active"><i class="fas fa-comments"></i> Reviews</a>
+            <a href="#" id="logoutBtn" class="logout"><i class="fas fa-right-from-bracket"></i> Logout</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="detail-header">
+            <div>
+                <h1 id="sellerName">Customer Reviews</h1>
+                <p>What your customers are saying</p>
+            </div>
+            <div class="header-actions">
+                <span id="currentTime"></span>
+            </div>
+        </header>
+
+        <!-- Stats Row -->
+        <section class="stats-card-row">
+            <div class="card-clean text-center">
+                <p class="label">Average Rating</p>
+                <div class="value-large" style="color: #f59e0b;" id="pageAvgRating">--</div>
+            </div>
+            <div class="card-clean text-center">
+                <p class="label">Total Reviews</p>
+                <div class="value-large" style="color: #3b82f6;" id="pageTotalReviews">--</div>
+            </div>
+            <div class="card-clean text-center">
+                <p class="label">Positive Sentiment</p>
+                <div class="value-large text-green" id="pagePositive">--</div>
+            </div>
+        </section>
+
+        <!-- Reviews Table -->
+        <section class="table-section">
+            <div class="card-clean" style="padding: 0; overflow: hidden;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead style="background: var(--bg-main);">
+                        <tr>
+                            <th style="padding: 16px; text-align: left;">Date</th>
+                            <th style="padding: 16px; text-align: left;">Rating</th>
+                            <th style="padding: 16px; text-align: left;">Review</th>
+                            <th style="padding: 16px; text-align: left;">Sentiment</th>
+                        </tr>
+                    </thead>
+                    <tbody id="allReviewsBody">
+                        <!-- JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="seller_script.js"></script>
+</body>
+
+</html>

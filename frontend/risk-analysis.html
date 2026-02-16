@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Analysis - TrustScore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="dashboard-page light-mode">
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <i class="fas fa-shield-halved"></i>
+            <span>TrustScore</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="admin_dashboard.html"><i class="fas fa-chart-pie"></i> Overview</a>
+            <a href="sellers.html"><i class="fas fa-users"></i> Sellers List</a>
+            <a href="risk-analysis.html" class="active"><i class="fas fa-triangle-exclamation"></i> Risk Analysis</a>
+            <a href="#" id="logoutBtn" class="logout"><i class="fas fa-right-from-bracket"></i> Logout</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="dashboard-header">
+            <div>
+                <h1>Risk Analysis Center</h1>
+                <p>Advanced heuristics and anomaly detection results</p>
+            </div>
+        </header>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon green"><i class="fas fa-check-circle"></i></div>
+                <div class="stat-info">
+                    <h3 id="low-risk-count">-</h3>
+                    <p>Low Risk</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon yellow"><i class="fas fa-exclamation-circle"></i></div>
+                <div class="stat-info">
+                    <h3 id="medium-risk-count">-</h3>
+                    <p>Medium Risk</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon red"><i class="fas fa-skull-crossbones"></i></div>
+                <div class="stat-info">
+                    <h3 id="high-risk-count">-</h3>
+                    <p>High Risk</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon purple" style="background: rgba(168, 85, 247, 0.1); color: #a855f7;"><i
+                        class="fas fa-eye-slash"></i></div>
+                <div class="stat-info">
+                    <h3 id="total-fake-reviews">-</h3>
+                    <p>Fake Reviews</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="charts-section">
+            <div class="chart-card">
+                <h3><i class="fas fa-trophy text-black"></i> Top 10 Sellers by Trust Score</h3>
+                <canvas id="top10SellersChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3><i class="fas fa-times-circle text-black"></i> Fake Review Distribution by Seller</h3>
+                <canvas id="fakeReviewChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Trust Score Distribution Row -->
+        <section class="insights-container" style="margin-top: 32px;">
+            <div class="dashboard-grid-2">
+                <div class="chart-card">
+                    <h3><i class="fas fa-chart-bar text-black"></i> Trust Score Distribution</h3>
+                    <canvas id="trustScoreDistChart"></canvas>
+                </div>
+                <div>
+                    <div class="section-header">
+                        <h2>Key Insights</h2>
+                    </div>
+                    <div class="suggestions-list">
+                        <li><i class="fas fa-info-circle text-blue"></i> Average score across platform is <span
+                                id="avg-score-text">--</span></li>
+                        <li><i class="fas fa-lightbulb text-yellow"></i> Coordinated review bursts detected in <span
+                                id="burst-count">--</span> sellers.</li>
+                        <li><i class="fas fa-shield-halved text-green"></i> Authenticity is the strongest metric this
+                            period.</li>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="admin_script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const response = await fetch('/api/admin/dashboard');
+            const data = await response.json();
+            if (response.ok) {
+                document.getElementById('low-risk-count').textContent = data.stats.low_risk_count;
+                document.getElementById('medium-risk-count').textContent = data.stats.medium_risk_count;
+                document.getElementById('high-risk-count').textContent = data.stats.high_risk_count;
+
+                const totalFake = data.sellers.reduce((acc, s) => acc + s.stats.fake_reviews, 0);
+                document.getElementById('total-fake-reviews').textContent = totalFake;
+                document.getElementById('avg-score-text').textContent = data.stats.avg_trust_score;
+
+                // 1. Top 10 Sellers by Trust Score
+                const top10 = [...data.sellers].sort((a, b) => b.trust_score - a.trust_score).slice(0, 10);
+                new Chart(document.getElementById('top10SellersChart'), {
+                    type: 'bar',
+                    data: {
+                        labels: top10.map(s => s.name),
+                        datasets: [{
+                            label: 'Trust Score',
+                            data: top10.map(s => s.trust_score),
+                            backgroundColor: '#818cf8',
+                            borderRadius: 4
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        plugins: { legend: { display: false } },
+                        scales: { x: { max: 100 } }
+                    }
+                });
+
+                // 2. Fake Review Distribution (Top 10 Worst)
+                const worstFake = [...data.sellers].sort((a, b) => b.stats.fake_reviews - a.stats.fake_reviews).slice(0, 7);
+                new Chart(document.getElementById('fakeReviewChart'), {
+                    type: 'bar',
+                    data: {
+                        labels: worstFake.map(s => s.name),
+                        datasets: [{
+                            label: 'Fake Reviews',
+                            data: worstFake.map(s => s.stats.fake_reviews),
+                            backgroundColor: '#f87171',
+                            borderRadius: 4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: { legend: { display: false } }
+                    }
+                });
+
+                // 3. Trust Score Distribution (Custom Colors)
+                const scores = data.sellers.map(s => s.trust_score);
+                const bins = [0, 0, 0, 0, 0]; // 0-20, 20-40, 40-60, 60-80, 80-100
+                scores.forEach(s => {
+                    if (s < 20) bins[0]++;
+                    else if (s < 40) bins[1]++;
+                    else if (s < 60) bins[2]++;
+                    else if (s < 80) bins[3]++;
+                    else bins[4]++;
+                });
+
+                new Chart(document.getElementById('trustScoreDistChart'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['0-20', '20-40', '40-60', '60-80', '80-100'],
+                        datasets: [{
+                            data: bins,
+                            backgroundColor: ['#ef4444', '#fb923c', '#facc15', '#34d399', '#10b981'],
+                            borderRadius: 8,
+                            barPercentage: 0.6
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            y: { grid: { color: 'rgba(0,0,0,0.05)' } }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

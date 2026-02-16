@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - TrustScore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="dashboard-page light-mode">
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <i class="fas fa-shield-halved"></i>
+            <span>TrustScore</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="active"><i class="fas fa-chart-pie"></i> Overview</a>
+            <a href="sellers.html"><i class="fas fa-users"></i> Sellers List</a>
+            <a href="risk-analysis.html"><i class="fas fa-triangle-exclamation"></i> Risk Analysis</a>
+            <a href="#" id="logoutBtn" class="logout"><i class="fas fa-right-from-bracket"></i> Logout</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="dashboard-header">
+            <div class="user-info">
+                <h1>Admin Dashboard</h1>
+                <p id="welcomeUser">Welcome, Administrator</p>
+            </div>
+            <div class="header-actions">
+                <span id="currentTime"></span>
+            </div>
+        </header>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon blue"><i class="fas fa-building"></i></div>
+                <div class="stat-info">
+                    <h3 id="totalSellers">-</h3>
+                    <p>Total Sellers</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon green"><i class="fas fa-star"></i></div>
+                <div class="stat-info">
+                    <h3 id="avgTrustScore">-</h3>
+                    <p>Avg TrustScore</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon red"><i class="fas fa-shield-virus"></i></div>
+                <div class="stat-info">
+                    <h3 id="highRiskCount">-</h3>
+                    <p>High Risk</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon yellow"><i class="fas fa-clock"></i></div>
+                <div class="stat-info">
+                    <h3 id="lowRiskCount">-</h3>
+                    <p>Low Risk</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="charts-section">
+            <div class="chart-card">
+                <h3>Risk Distribution</h3>
+                <canvas id="riskChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <h3>Score Distribution</h3>
+                <canvas id="scoreDistributionChart"></canvas>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <div class="section-header">
+                <h3>Sellers Overview</h3>
+                <a href="sellers.html" class="btn btn-sm btn-outline">View All</a>
+            </div>
+            <div class="table-container">
+                <table id="sellersTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Seller</th>
+                            <th>Trust Score</th>
+                            <th>Confidence</th>
+                            <th>Risk Level</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sellersBody">
+                        <!-- Loaded via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="admin_script.js"></script>
+</body>
+
+</html>

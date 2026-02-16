@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellers List - TrustScore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="dashboard-page light-mode">
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <i class="fas fa-shield-halved"></i>
+            <span>TrustScore</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="admin_dashboard.html"><i class="fas fa-chart-pie"></i> Overview</a>
+            <a href="sellers.html" class="active"><i class="fas fa-users"></i> Sellers List</a>
+            <a href="risk-analysis.html"><i class="fas fa-triangle-exclamation"></i> Risk Analysis</a>
+            <a href="#" id="logoutBtn" class="logout"><i class="fas fa-right-from-bracket"></i> Logout</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="dashboard-header">
+            <div>
+                <h1>All Registered Sellers</h1>
+                <p>Monitor and manage platform participants</p>
+            </div>
+        </header>
+
+        <section class="table-section">
+            <div class="table-container">
+                <table id="sellersListTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Seller Name</th>
+                            <th>Trust Score</th>
+                            <th>Confidence</th>
+                            <th>Risk Level</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sellersListBody">
+                        <!-- Loaded via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="admin_script.js"></script>
+    <script>
+        // Additional logic for this page specifically if needed
+        document.addEventListener('DOMContentLoaded', async () => {
+            const response = await fetch('/api/admin/dashboard');
+            const data = await response.json();
+            if (response.ok) {
+                const tbody = document.getElementById('sellersListBody');
+                if (tbody) {
+                    tbody.innerHTML = '';
+                    data.sellers.forEach(seller => {
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `
+                            <td>#${seller.seller_id}</td>
+                            <td>${seller.name}</td>
+                            <td><span class="gradient-text font-bold" style="font-size: 1.1rem;">${seller.trust_score}</span></td>
+                            <td><strong>${seller.confidence_score}%</strong></td>
+                            <td><span class="trust-badge risk-${seller.risk_level.toLowerCase()}">${seller.risk_level}</span></td>
+                            <td><a href="admin_seller_details.html?id=${seller.seller_id}" class="btn btn-primary" style="padding: 6px 20px; border-radius: 6px; font-size: 0.85rem;">View</a></td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustScore – Digital Trust Assurance System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="landing-page light-mode-landing">
+    <nav class="navbar container">
+        <div class="logo">
+            <i class="fas fa-shield-halved text-primary"></i>
+            <span class="text-dark">TrustScore</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="login.html" class="btn btn-outline-primary">Login</a>
+            <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        </div>
+    </nav>
+
+    <header id="home" class="hero container">
+        <div class="hero-content">
+            <h1 class="hero-title">TrustScore – Know Your Seller <span class="text-primary">Before You Buy</span></h1>
+            <p class="hero-subtitle">A complete digital trust system that provides transparent, data-driven seller
+                reliability scores for e-commerce platforms.</p>
+
+            <ul class="hero-bullets">
+                <li><i class="fas fa-check-circle text-teal"></i> Detect fake reviews automatically</li>
+                <li><i class="fas fa-check-circle text-teal"></i> Monitor seller performance</li>
+                <li><i class="fas fa-check-circle text-teal"></i> Transparent, reliable, actionable metrics</li>
+            </ul>
+
+            <div class="hero-cta">
+                <a href="login.html" class="btn btn-lg btn-primary">Login (Admin/Seller)</a>
+                <a href="buyer_demo.html" class="btn btn-lg btn-outline-primary">Explore Buyer Demo</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card glass-panel">
+                <div class="card-header">
+                    <i class="fas fa-chart-pie text-secondary"></i>
+                    <span>Trust Analytics</span>
+                </div>
+                <div class="fake-chart">
+                    <!-- CSS drawn chart representations -->
+                    <div class="bar" style="height: 60%"></div>
+                    <div class="bar" style="height: 80%"></div>
+                    <div class="bar" style="height: 45%"></div>
+                    <div class="bar" style="height: 90%"></div>
+                </div>
+                <div class="trust-badge-large">
+                    <span>Trust Score</span>
+                    <strong>92/100</strong>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="section-padding bg-white">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Why TrustScore?</h2>
+                <p class="section-desc">Comprehensive metrics for a safer marketplace</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon-box bg-blue-light">
+                        <i class="fas fa-cubes text-primary"></i>
+                    </div>
+                    <h3>Multi-Dimensional Scoring</h3>
+                    <p>Evaluate sellers on Delivery, Returns, Response Time, Authenticity, Consistency, and Account Age.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box bg-red-light">
+                        <i class="fas fa-user-secret text-danger"></i>
+                    </div>
+                    <h3>Fake Review Detection</h3>
+                    <p>ML-based analysis flags suspicious reviews to ensure scores are reliable and manipulation-free.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box bg-purple-light">
+                        <i class="fas fa-chart-line text-secondary"></i>
+                    </div>
+                    <h3>Interactive Dashboards</h3>
+                    <p>Dedicated interfaces for Admins and Sellers providing deep insights and performance suggestions.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box bg-teal-light">
+                        <i class="fas fa-shop text-teal"></i>
+                    </div>
+                    <h3>Buyer-Friendly Metrics</h3>
+                    <p>Clear, easy-to-understand seller scores displayed directly on product pages for transparency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="section-padding bg-soft">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">How TrustScore Works</h2>
+            </div>
+            <div class="process-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Collect Data</h3>
+                    <p>Transactions, reviews, and seller info are securely ingested.</p>
+                </div>
+                <div class="connector-line"></div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Calculate Score</h3>
+                    <p>Weighted engine evaluates performance across 6 dimensions.</p>
+                </div>
+                <div class="connector-line"></div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Display Metrics</h3>
+                    <p>Scores and risk levels are shown to all stakeholders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="section-padding bg-white">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">See TrustScore in Action</h2>
+            </div>
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <div class="demo-preview admin-preview">
+                        <i class="fas fa-user-shield fa-3x text-primary"></i>
+                        <span>Admin Dashboard</span>
+                    </div>
+                    <div class="demo-content">
+                        <h3>For Admins</h3>
+                        <p>Monitor platform health and risk.</p>
+                        <a href="login.html" class="btn btn-sm btn-outline-primary">Try as Admin</a>
+                    </div>
+                </div>
+                <div class="demo-card">
+                    <div class="demo-preview seller-preview">
+                        <i class="fas fa-store fa-3x text-secondary"></i>
+                        <span>Seller Dashboard</span>
+                    </div>
+                    <div class="demo-content">
+                        <h3>For Sellers</h3>
+                        <p>Track your reputation metrics.</p>
+                        <a href="login.html" class="btn btn-sm btn-outline-primary">Try as Seller</a>
+                    </div>
+                </div>
+                <div class="demo-card">
+                    <div class="demo-preview buyer-preview">
+                        <i class="fas fa-cart-shopping fa-3x text-teal"></i>
+                        <span>Buyer View</span>
+                    </div>
+                    <div class="demo-content">
+                        <h3>For Buyers</h3>
+                        <p>Shop with confidence.</p>
+                        <a href="buyer_demo.html" class="btn btn-sm btn-outline-primary">View Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="section-title text-white">Built With Cutting-Edge Technology</h2>
+            <div class="tech-stack-row">
+                <div class="tech-badge"><i class="fab fa-python"></i> Python & FastAPI</div>
+                <div class="tech-badge"><i class="fas fa-database"></i> Supabase</div>
+                <div class="tech-badge"><i class="fas fa-chart-pie"></i> Chart.js</div>
+                <div class="tech-badge"><i class="fas fa-brain"></i> Machine Learning</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>TrustScore</h3>
+                    <p>ByteShift</p>
+                    <a href="mailto:trustscore@demo.com">trustscore@demo.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TrustScore. Licensed under MIT.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

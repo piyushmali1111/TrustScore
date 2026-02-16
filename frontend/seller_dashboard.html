@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard - TrustScore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="dashboard-page light-mode">
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <i class="fas fa-shield-halved"></i>
+            <span>TrustScore</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="seller_dashboard.html" class="active"><i class="fas fa-chart-line"></i> My Dashboard</a>
+            <a href="seller_reviews.html"><i class="fas fa-comments"></i> Reviews</a>
+            <a href="#" id="logoutBtn" class="logout"><i class="fas fa-right-from-bracket"></i> Logout</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="detail-header">
+            <div>
+                <h1 id="sellerName">Seller Dashboard</h1>
+                <p>Detailed performance metrics and analysis</p>
+            </div>
+            <div class="header-actions">
+                <span id="currentTime"></span>
+            </div>
+        </header>
+
+        <!-- Top Stats Row -->
+        <section class="stats-card-row">
+            <div class="card-clean text-center">
+                <p class="label">Trust Score</p>
+                <div class="value-large text-primary-blue" id="trustScore">--</div>
+            </div>
+            <div class="card-clean text-center">
+                <p class="label">Risk Level</p>
+                <div class="value-large">
+                    <span class="trust-badge" id="riskLevelBadge">--</span>
+                </div>
+            </div>
+            <div class="card-clean text-center">
+                <p class="label">Confidence Score</p>
+                <div class="value-large text-primary-blue" id="confidenceScore">--</div>
+            </div>
+        </section>
+
+        <!-- Charts Row -->
+        <section class="charts-row-split">
+            <!-- Radar Chart -->
+            <div class="card-clean">
+                <h3>Performance Metrics</h3>
+                <div class="chart-container-radar">
+                    <canvas id="sellerRadarChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Review Analysis -->
+            <div class="card-clean">
+                <h3><i class="fas fa-search"></i> Review Analysis</h3>
+                <div class="review-analysis-container">
+                    <div class="review-alert alert-red">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-circle-xmark alert-icon"></i>
+                            <div class="alert-content">
+                                <h4>Fake Reviews Detected</h4>
+                                <p>Flagged by AI engine</p>
+                            </div>
+                        </div>
+                        <div class="alert-value" id="fakeReviewsCount">0</div>
+                    </div>
+
+                    <div class="review-alert alert-green">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-check-circle alert-icon"></i>
+                            <div class="alert-content">
+                                <h4>Real Reviews</h4>
+                                <p>Verified purchase reviews</p>
+                            </div>
+                        </div>
+                        <div class="alert-value" id="realReviewsCount">0</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trend & Benchmark Row -->
+        <section class="charts-row-split">
+            <div class="card-clean">
+                <h3><i class="fas fa-chart-line"></i> Trust Score Trend (6 Months)</h3>
+                <div class="chart-container-radar">
+                    <canvas id="trendChart"></canvas>
+                </div>
+            </div>
+            <div class="card-clean">
+                <h3><i class="fas fa-users-viewfinder"></i> Peer Benchmarking</h3>
+                <div class="chart-container-radar">
+                    <canvas id="benchmarkChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sentiment & AI Insights Row -->
+        <section class="charts-row-split">
+            <div class="card-clean">
+                <h3><i class="fas fa-heart"></i> Customer Sentiment Analysis</h3>
+                <div class="chart-container-radar">
+                    <canvas id="sentimentChart"></canvas>
+                </div>
+            </div>
+
+            <div class="card-clean">
+                <h3><i class="fas fa-robot text-purple"></i> AI Actionable Insights</h3>
+                <div class="review-analysis-container" id="aiInsightsList"
+                    style="justify-content: flex-start; overflow-y: auto; max-height: 300px;">
+                    <!-- JS Populated -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Metrics Grid -->
+        <section class="detailed-metrics-section">
+            <h3><i class="fas fa-list"></i> Detailed Metrics</h3>
+            <div class="metrics-grid-detailed">
+                <div class="metric-box">
+                    <div class="m-icon text-blue"><i class="fas fa-truck"></i></div>
+                    <p>DELIVERY SCORE</p>
+                    <h2 id="mDelivery">--</h2>
+                </div>
+                <div class="metric-box">
+                    <div class="m-icon text-orange"><i class="fas fa-rotate-left"></i></div>
+                    <p>RETURN SCORE</p>
+                    <h2 id="mReturn">--</h2>
+                </div>
+                <div class="metric-box">
+                    <div class="m-icon text-green"><i class="fas fa-clock"></i></div>
+                    <p>RESPONSE SCORE</p>
+                    <h2 id="mResponse">--</h2>
+                </div>
+                <div class="metric-box">
+                    <div class="m-icon text-blue"><i class="fas fa-certificate"></i></div>
+                    <p>AUTHENTICITY SCORE</p>
+                    <h2 id="mAuthenticity">--</h2>
+                </div>
+                <div class="metric-box">
+                    <div class="m-icon text-green"><i class="fas fa-sitemap"></i></div>
+                    <p>CONSISTENCY SCORE</p>
+                    <h2 id="mConsistency">--</h2>
+                </div>
+                <div class="metric-box">
+                    <div class="m-icon text-blue"><i class="fas fa-calendar-check"></i></div>
+                    <p>ACCOUNT AGE SCORE</p>
+                    <h2 id="mAge">--</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Reviews Table -->
+        <section class="table-section" style="margin-top: 32px;">
+            <div class="section-header">
+                <h3>Recent Reviews</h3>
+            </div>
+            <div class="card-clean" style="padding: 0; overflow: hidden;">
+                <table id="recentReviewsTable" style="width: 100%; border-collapse: collapse;">
+                    <thead style="background: var(--bg-main);">
+                        <tr>
+                            <th style="padding: 16px; text-align: left;">Rating</th>
+                            <th style="padding: 16px; text-align: left;">Comment</th>
+                            <th style="padding: 16px; text-align: left;">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reviewsBody">
+                        <!-- JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="seller_script.js"></script>
+</body>
+
+</html>

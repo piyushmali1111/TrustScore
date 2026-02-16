@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - TrustScore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="auth-page light-mode-landing">
+    <div class="split-auth-container">
+        <!-- Left Side: Form -->
+        <div class="auth-left">
+            <a href="index.html" class="auth-brand">
+                <i class="fas fa-shield-halved"></i> TrustScore
+            </a>
+
+            <div class="auth-welcome">
+                <h1>Create Account</h1>
+                <p>Join the platform to access trust analytics.</p>
+            </div>
+
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username" placeholder="Pick a username" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="Create a password" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">I am a...</label>
+                    <select id="role" class="form-control" required>
+                        <option value="seller">Seller</option>
+                        <option value="admin">Administrator (Demo Only)</option>
+                    </select>
+                </div>
+
+                <div id="sellerIdGroup" class="form-group">
+                    <label for="seller_id">Seller ID (Optional)</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-id-card"></i>
+                        <input type="text" id="seller_id" placeholder="Enter your Seller ID">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-lg">Sign Up</button>
+            </form>
+
+            <div class="auth-footer-links">
+                <p>Already have an account? <a href="login.html">Login</a>.</p>
+            </div>
+
+            <div class="legal-footer">
+                <p>&copy; 2024 ByteShift. Privacy Policy</p>
+            </div>
+        </div>
+
+        <!-- Right Side: Visual -->
+        <div class="auth-right">
+            <div class="auth-right-content">
+                <h2>Join a community of trusted sellers.</h2>
+                <p>Start building your reputation today with real-time analytics.</p>
+
+                <!-- Visual Placeholder -->
+                <div class="visual-mockup">
+                    <div class="mockup-header">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="mockup-row">
+                            <div class="circle"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="mockup-row">
+                            <div class="circle"></div>
+                            <div class="line short"></div>
+                        </div>
+                        <div class="mockup-badges">
+                            <span class="badge">Trusted</span>
+                            <span class="badge">Verified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('role').addEventListener('change', (e) => {
+            const group = document.getElementById('sellerIdGroup');
+            group.style.display = e.target.value === 'seller' ? 'block' : 'none';
+        });
+
+        document.getElementById('signupForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const role = document.getElementById('role').value;
+            const seller_id = document.getElementById('seller_id').value || null;
+
+            try {
+                const response = await fetch('/api/signup', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username, email, password, role, seller_id })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    alert('Signup successful! Please login.');
+                    window.location.href = 'login.html';
+                } else {
+                    alert(data.detail || 'Signup failed');
+                }
+            } catch (err) {
+                console.error(err);
+                alert('Connection error');
+            }
+        });
+    </script>
+</body>
+
+</html>
