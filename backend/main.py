@@ -246,10 +246,13 @@ def get_sellers():
     scores, _ = get_scores_data()
     return scores
 
-# Mount frontend
+# Mount static assets (CSS, JS, images) first
 frontend_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "frontend")
 if os.path.exists(frontend_path):
-    app.mount("/", StaticFiles(directory=frontend_path, html=True), name="static")
+    # Serve static assets like CSS, JS with /static/ prefix
+    app.mount("/static", StaticFiles(directory=frontend_path), name="static")
+    # Serve HTML files at root
+    app.mount("/", StaticFiles(directory=frontend_path, html=True), name="frontend")
 
 if __name__ == "__main__":
     import uvicorn
